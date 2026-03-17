@@ -1,17 +1,23 @@
-# study_map_app
+# 📚 Study Map App
+Study Map App, öğrencilerin ders çalışma süreçlerini uçtan uca yönetebilmeleri için tasarlanmış kapsamlı bir dijital asistan ve planlayıcıdır. Uygulama; planlama, analiz ve sosyal etkileşimi tek bir platformda birleştirir.
 
-A new Flutter project.
+### 🌟 Temel Özellikler
 
-## Getting Started
+**Görev Yönetimi:** Günlük ve haftalık yapılacaklar listesi oluşturma, görev detaylandırma ve ilerleme takibi.
 
-This project is a starting point for a Flutter application.
+**Study Map (Çalışma Haritası):** Çalışma performansını ve alışkanlıklarını görsel bir "ısı haritası" (grid) üzerinden izleme.
 
-A few resources to get you started if this is your first Flutter project:
+**Verimlilik Analizi:** Tamamlanan görev oranlarına göre gelişim grafiklerini inceleme.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**Sosyal Platform:** Arkadaş ekleme ve ortak çalışma motivasyonu için sosyal etkileşim alanı.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Profil Yönetimi:** Kişisel çalışma verilerini ve kullanıcı istatistiklerini görüntüleme.
+
+
+#### 🛠️ Teknik Altyapı
+
+* Framework: Flutter
+
+* Dil: Dart
+
+* Stil: Pastel tonlara ve özel tipografiye (Pacifico, Rancho, Betania) sahip modern UI/UX tasarımı.
