@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:study_map_app/screens/analiz.dart';
+import 'package:study_map_app/screens/daily_tasks.dart';
+import 'package:study_map_app/screens/friends.dart';
+import 'package:study_map_app/screens/profile.dart';
+import 'package:study_map_app/screens/study_map.dart';
+import 'package:study_map_app/screens/weekly_tasks.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -27,6 +33,30 @@ class HomeScreen extends StatelessWidget {
               color: const Color.fromARGB(255, 52, 116, 54),
               size: 30,
             ), // ev ikonu
+            SizedBox(width: 195),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.zero,
+                fixedSize: Size(50, 50),
+                backgroundColor: const Color.fromRGBO(233, 226, 205, 1),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadiusGeometry.circular(50),
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Profile()),
+                );
+              },
+
+              child: Icon(
+                Icons.person,
+                color: Color.fromRGBO(94, 14, 14, 1),
+                size: 30,
+              ),
+            ),
           ],
         ),
       ),
@@ -56,7 +86,10 @@ class HomeScreen extends StatelessWidget {
 
                 child: InkWell(
                   onTap: () {
-                    print("günlük görevlere tıklandı");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DailyTasks()),
+                    );
                   },
                   borderRadius: BorderRadius.circular(20),
                   highlightColor: Color.fromARGB(221, 0, 0, 0),
@@ -93,7 +126,10 @@ class HomeScreen extends StatelessWidget {
                 padding: EdgeInsets.only(top: 50),
                 child: InkWell(
                   onTap: () {
-                    print("haftalık görevlere tıklandı");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => WeeklyTasks()),
+                    );
                   },
                   borderRadius: BorderRadius.circular(20),
                   highlightColor: Color.fromARGB(221, 0, 0, 0),
@@ -134,7 +170,10 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.only(top: 50),
               child: InkWell(
                 onTap: () {
-                  print("study map e tıklandı");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => StudyMap()),
+                  );
                 },
                 borderRadius: BorderRadius.circular(20),
                 highlightColor: Color.fromARGB(221, 0, 0, 0),
@@ -175,7 +214,10 @@ class HomeScreen extends StatelessWidget {
                 padding: EdgeInsets.only(top: 50),
                 child: InkWell(
                   onTap: () {
-                    print("analize tıklandı");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Analiz()),
+                    );
                   },
                   borderRadius: BorderRadius.circular(20),
                   highlightColor: Color.fromARGB(221, 0, 0, 0),
@@ -212,7 +254,10 @@ class HomeScreen extends StatelessWidget {
                 padding: EdgeInsets.only(top: 50),
                 child: InkWell(
                   onTap: () {
-                    print("friends e tıklandı");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Friends()),
+                    );
                   },
                   borderRadius: BorderRadius.circular(20),
                   highlightColor: Color.fromARGB(221, 0, 0, 0),
