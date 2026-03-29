@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 15.0),
             child: Text(
-              "HOŞGELDİN KULLANICI 😊",
+              "Hoşgeldiniz [kullanıcı adı] 😊",
               style: TextStyle(
                 fontFamily: 'Rancho',
                 color: Colors.black,
