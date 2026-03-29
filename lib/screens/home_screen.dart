@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         title: Row(
           children: [
             Text(
-              'HOME',
+              'Home',
 
               style: TextStyle(
                 fontFamily: 'Betania',
