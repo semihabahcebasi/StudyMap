@@ -19,7 +19,6 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text(
               'Home',
-
               style: TextStyle(
                 fontFamily: 'Betania',
                 color: const Color.fromARGB(255, 52, 116, 54),
@@ -27,30 +26,26 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.w900,
               ),
             ),
-            SizedBox(width: 10), // yazı ile ikon arasındaki boşluk
+            SizedBox(width: 10),
             Icon(
               Icons.home,
               color: const Color.fromARGB(255, 52, 116, 54),
               size: 30,
-            ), // ev ikonu
-            SizedBox(width: 195),
+            ),
+
+            Spacer(), // <--- 190'lık SizedBox yerine bunu koyduk! Tüm boşluğu bu alır.
+
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.zero,
-                fixedSize: Size(50, 50),
                 backgroundColor: const Color.fromRGBO(233, 226, 205, 1),
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadiusGeometry.circular(50),
-                ),
               ),
+              // ...  buton stilin aynı kalıyor
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Profile()),
                 );
               },
-
               child: Icon(
                 Icons.person,
                 color: Color.fromRGBO(94, 14, 14, 1),
