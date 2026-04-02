@@ -35,20 +35,16 @@ class HomeScreen extends StatelessWidget {
 
             Spacer(), // <--- 190'lık SizedBox yerine bunu koyduk! Tüm boşluğu bu alır.
 
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromRGBO(233, 226, 205, 1),
-              ),
-              // ...  buton stilin aynı kalıyor
+            IconButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Profile()),
                 );
               },
-              child: Icon(
+              icon: Icon(
                 Icons.person,
-                color: Color.fromRGBO(94, 14, 14, 1),
+                color: const Color.fromARGB(255, 52, 116, 54),
                 size: 30,
               ),
             ),
