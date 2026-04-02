@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:study_map_app/models/task_model.dart';
+import 'package:study_map_app/screens/home_screen.dart';
+import 'package:study_map_app/screens/profile.dart';
+import 'package:study_map_app/screens/study_map.dart';
+import 'package:study_map_app/screens/weekly_tasks.dart';
 
 class DailyTasks extends StatefulWidget {
   const DailyTasks({super.key});
@@ -78,7 +82,12 @@ class _DailyTasksState extends State<DailyTasks> {
         leading: Align(
           alignment: Alignment.topLeft,
           child: IconButton(
-            onPressed: () => print("home sayfasına gider"),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+              );
+            },
             icon: Icon(Icons.home),
           ),
         ),
@@ -97,7 +106,12 @@ class _DailyTasksState extends State<DailyTasks> {
           Align(
             alignment: Alignment.topRight,
             child: IconButton(
-              onPressed: () => print("profile sayfası"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Profile()),
+                );
+              },
               icon: Icon(Icons.person),
             ),
           ),
@@ -166,7 +180,12 @@ class _DailyTasksState extends State<DailyTasks> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 223, 158, 188),
                 ),
-                onPressed: () => print("haftalık görevler sayfası"),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => WeeklyTasks()),
+                  );
+                },
                 child: Padding(
                   padding: const EdgeInsets.only(top: 30),
                   child: Column(
@@ -191,7 +210,12 @@ class _DailyTasksState extends State<DailyTasks> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 223, 158, 188),
                 ),
-                onPressed: () => print("haftalık görevler sayfası"),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => StudyMap()),
+                  );
+                },
                 child: Padding(
                   padding: const EdgeInsets.only(top: 30),
                   child: Column(
